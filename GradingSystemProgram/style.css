@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  background: url('./backgroundImage.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to right, #8b5e3c, rgba(139, 94, 60, 0));
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  border-bottom: 4px solid #d2b48c;
+}
+
+#h2 {
+  color: rgb(97, 46, 7);
+  font-weight: 600;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  width: 40%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.result-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color:rgb(41, 114, 143);
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: rgb(88, 41, 7);
+}
+
+input[type="number"] {
+  width: 50%; 
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.short-input {
+  width: 30%; 
+}
+
+.btn {
+  background-color: #8b5e3c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.btn:hover{
+  background-color: skyblue; 
+}
+#resetButton {
+  background-color: rgb(41, 114, 143); 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  margin-left: 90px;
+}
+
+#resetButton:hover {
+  background-color: #8b5e3c;
+}

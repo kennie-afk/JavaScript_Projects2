@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('math4.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Navigation Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* Tab Buttons */
+.tab-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Colors */
+#circleBtn {
+    background-color: rgba(210, 105, 30, 0.7); /* Chocolate color with slight transparency */
+    color: white; /* Ensure text remains visible */
+    border: 2px solid rgba(160, 82, 45, 0.8); /* Darker chocolate border */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.4), /* Glossy inner glow */
+                0 0 12px rgba(160, 82, 45, 0.6); /* Outer chocolate glow */
+}
+
+/* Glossy effect */
+#circleBtn::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 35%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+#circleBtn:hover {
+    background-color: rgba(210, 105, 30, 0.9); /* More intense chocolate tint */
+    border-color: rgba(160, 82, 45, 1);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6), 
+                0 0 15px rgba(160, 82, 45, 0.8);
+}
+
+/* Active effect (when clicking) */
+#circleBtn:active {
+    background-color: rgba(210, 105, 30, 1);
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.7),
+                0 0 18px rgba(160, 82, 45, 1);
+}
+
+#perimeterBtn {
+    background-color: rgba(128, 128, 128, 0.2); /* Transparent gray */
+    color: white; /* Ensures text is visible */
+    border: 2px solid rgba(169, 169, 169, 0.8); /* Light gray border */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6), /* Glossy inner glow */
+                0 0 12px rgba(169, 169, 169, 0.6); /* Outer gray glow */
+}
+
+/* Glossy effect */
+#perimeterBtn::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 35%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+#perimeterBtn:hover {
+    background-color: rgba(128, 128, 128, 0.5); /* More visible gray */
+    border-color: rgba(169, 169, 169, 1);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 15px rgba(169, 169, 169, 0.8);
+}
+
+/* Active effect (when clicking) */
+#perimeterBtn:active {
+    background-color: rgba(128, 128, 128, 0.7);
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.9),
+                0 0 18px rgba(169, 169, 169, 1);
+}
+
+#volumeBtn {
+    background-color: rgba(135, 206, 250, 0.2); /* Transparent sky blue */
+    color: white; /* Ensures text is visible */
+    border: 2px solid rgba(135, 206, 250, 0.8); /* Sky blue border */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6), /* Glossy inner glow */
+                0 0 12px rgba(135, 206, 250, 0.6); /* Outer sky blue glow */
+}
+
+/* Glossy effect */
+#volumeBtn::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 35%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+#volumeBtn:hover {
+    background-color: rgba(135, 206, 250, 0.5); /* More visible sky blue */
+    border-color: rgba(135, 206, 250, 1);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 15px rgba(135, 206, 250, 0.8);
+}
+
+/* Active effect (when clicking) */
+#volumeBtn:active {
+    background-color: rgba(135, 206, 250, 0.7);
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.9),
+                0 0 18px rgba(135, 206, 250, 1);
+}
+
+
+/* Reset Button Styling */
+.reset-btn {
+    background-color: rgba(135, 206, 250, 0.7); /* Sky Blue with slight transparency */
+    color: white; /* Keep text visible */
+    font-size: 18px; /* Bigger text */
+    font-weight: bold;
+    padding: 12px 24px; /* More padding */
+    border: 2px solid rgba(100, 149, 237, 0.8); /* Cornflower blue border */
+    border-radius: 8px; /* Slightly rounded */
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.4), /* Inner glossy glow */
+                0 0 12px rgba(100, 149, 237, 0.6); /* Outer blue glow */
+    margin-top: 15px; /* Add spacing */
+}
+
+/* Glossy reflection effect */
+.reset-btn::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 35%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.reset-btn:hover {
+    background-color: rgba(135, 206, 250, 0.9); /* More intense sky blue */
+    border-color: rgba(100, 149, 237, 1);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.6), 
+                0 0 15px rgba(100, 149, 237, 0.8);
+}
+
+/* Active effect (when clicking) */
+.reset-btn:active {
+    background-color: rgba(135, 206, 250, 1); /* Solid sky blue */
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.7),
+                0 0 18px rgba(100, 149, 237, 1);
+}
+
+.container {
+    width: 65%; 
+    background: rgba(0, 4, 8, 0.75); /* Darker navy blue tint */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
+    backdrop-filter: blur(8px); /* More blur for a frosted effect */
+}
+
+
+/* Active Content */
+.content {
+    display: none;
+}
+.content.active {
+    display: block;
+}
