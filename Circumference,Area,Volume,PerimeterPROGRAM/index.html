@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Calculations</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+        <button class="tab-button" id="circleBtn" onclick="openTab('circleCalculations')">Circle (Area & Circumference)</button>
+        <button class="tab-button" id="perimeterBtn" onclick="openTab('perimeter')">Perimeter</button>
+        <button class="tab-button" id="volumeBtn" onclick="openTab('volume')">Volume</button>
+    </div>
+
+    <!-- Transparent Content Container -->
+    <div class="container">
+        <!-- Circle Calculations (Area & Circumference) -->
+        <div class="content active" id="circleCalculations">
+            <h1>Circle Calculations</h1>
+            <label>Radius:</label>
+            <input type="number" id="radius" min="0" oninput="calculateCircle()">
+            <div id="resultContainer">
+                <h2>Results</h2>
+                <p id="areaResult">Area will be displayed here.</p>
+                <p id="circumferenceResult">Circumference will be displayed here.</p>
+            </div>
+            <button class="reset-btn" onclick="resetCircle()">Reset</button>
+        </div>
+
+        <!-- Perimeter Section -->
+        <div class="content" id="perimeter">
+            <h1>Calculate Perimeter</h1>
+            <label>Length:</label>
+            <input type="number" id="perimeterLength" min="0">
+            <label>Width:</label>
+            <input type="number" id="perimeterWidth" min="0">
+            <button class="calculate-btn" onclick="calculatePerimeter()">Calculate</button>
+            <div id="resultContainer">
+                <h2>Result</h2>
+                <p id="perimeterResult">Perimeter will be displayed here.</p>
+            </div>
+            <button class="reset-btn" onclick="resetPerimeter()">Reset</button>
+        </div>
+
+        <!-- Volume Section -->
+        <div class="content" id="volume">
+            <h1>Calculate Volume</h1>
+            <label>Radius:</label>
+            <input type="number" id="volumeRadius" min="0">
+            <label>Height:</label>
+            <input type="number" id="volumeHeight" min="0">
+            <button class="calculate-btn" onclick="calculateVolume()">Calculate</button>
+            <div id="resultContainer">
+                <h2>Result</h2>
+                <p id="volumeResult">Volume will be displayed here.</p>
+            </div>
+            <button class="reset-btn" onclick="resetVolume()">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+
+</body>
+</html>

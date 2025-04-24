@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>GRADE CALCULATOR</header>
+  <div class="container">
+    <h2 id="h2">Units</h2> 
+
+    <form id="marksForm">
+      <div class="form-group">
+        <label for="unit1">Internet Applications</label>
+        <input type="number" id="unit1" min="0" max="73" required class="short-input" />
+      </div>
+      <div class="form-group">
+        <label for="unit2">Professional Issues IT</label>
+        <input type="number" id="unit2" min="0" max="73" required class="short-input" />
+      </div>
+      <div class="form-group">
+        <label for="unit3">Data Warehousing</label>
+        <input type="number" id="unit3" min="0" max="73" required class="short-input" />
+      </div>
+      <div class="form-group">
+        <label for="unit4">Expert Systems</label>
+        <input type="number" id="unit4" min="0" max="73" required class="short-input" />
+      </div>
+      
+      
+      <button type="submit" class="btn">Compute</button>
+      <button type="button" id="resetButton" class="btn reset-btn">Reset</button>
+    </form>
+
+    <div id="result" class="result-card"></div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
